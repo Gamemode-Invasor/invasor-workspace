@@ -1,0 +1,14 @@
+# Each of these is its own repository (listed in repos.conf); this one doesn't track them
+/invasor/
+/invasor-*/
+
+# Build output of build-core.sh and build-modules.sh
+/dist/
+
+# Local only
+AGENTS.md
+CLAUDE.md
+.claude/
+
+# The organization profile repository (published as Gamemode-Invasor/.github)
+/org-profile/
