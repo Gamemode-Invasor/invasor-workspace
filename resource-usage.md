@@ -25,8 +25,8 @@ Its backend, in memory and measured separately, plus the size of its UI:
 |---|---|---|---|---|
 | Artwork | ~1 MB | 6 KB | 0 | Only when you use it: it searches for and downloads images |
 | Deckico | <0.1 MB | — | 0 | A moment on every Steam start: it walks the libraries and sets icons |
-| Ducky | ~0.7 MB | 8 KB | 0 | Only when options change (reads/writes a TOML file) |
-| Fishy | ~2.7 MB | 10 KB | 0 | Same as Ducky |
+| Patito | ~0.7 MB | 8 KB | 0 | Only when options change (reads/writes a TOML file) |
+| Pescao | ~2.7 MB | 10 KB | 0 | Same as Patito |
 | GE-RR | ~1.1 MB | 4 KB | 0 | On every Steam start: one GitHub query and, if there is a new version, the download |
 | Noty | ~0.3 MB | 3 KB | ~0 | One thread waiting for requests; each notification is instant |
 
