@@ -1,0 +1,54 @@
+name: Market catalog
+
+# Generates market.json, the catalog the Invasor module market reads (see invasor/docs/MODULES.md, "The Market"):
+# for every repository in repos.conf, its newest stable release and its newest one pre-releases included.
+# The file goes to the market-data branch as its only commit: nobody reads that branch's history, and the app
+# rebuilds every download URL itself, so the file only says which release of which module is the newest.
+#
+# While tools/gen_market.py is not on the core's main branch yet, set the repository variable CORE_REF to
+# the branch that has it (beta); delete the variable after the core's next release.
+on:
+  schedule:
+    - cron: "7 * * * *"
+  push:
+    branches: [main]
+    paths: [repos.conf, .github/workflows/market.yml]
+  workflow_dispatch:
+
+concurrency:
+  group: market
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  catalog:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          path: workspace
+      - uses: actions/checkout@v4
+        with:
+          repository: Gamemode-Invasor/invasor
+          ref: ${{ vars.CORE_REF || 'main' }}
+          path: invasor
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+      - name: Generate market.json
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: python3 invasor/tools/gen_market.py --conf workspace/repos.conf --out out/market.json
+      - name: Publish it on the market-data branch
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          cd out
+          git init -q -b market-data
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add market.json
+          git commit -q -m "Market catalog $(date -u +%Y-%m-%dT%H:%M:%SZ)"
+          git push --force "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" market-data
