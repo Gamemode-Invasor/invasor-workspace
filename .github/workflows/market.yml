@@ -9,7 +9,7 @@ name: Market catalog
 # the branch that has it (beta); delete the variable after the core's next release.
 on:
   schedule:
-    - cron: "7 * * * *"
+    - cron: "7 */12 * * *"
   push:
     branches: [main]
     paths: [repos.conf, .github/workflows/market.yml]

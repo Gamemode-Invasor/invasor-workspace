@@ -8,7 +8,7 @@ This repository only has what ties them together; each repository inside keeps i
 | File | What it does |
 |---|---|
 | `repos.conf` | The list of repositories: the core and one per module |
-| `.github/workflows/market.yml` | Every hour it generates `market.json`, the module market's catalog, from `repos.conf` and the repositories' releases, and publishes it on the `market-data` branch |
+| `.github/workflows/market.yml` | Every 12 hours it generates `market.json`, the module market's catalog, from `repos.conf` and the repositories' releases, and publishes it on the `market-data` branch |
 | `bootstrap.sh` | Clones what is missing from `repos.conf` and checks the build tools |
 | `build-core.sh` | Builds the core's installable `invasor-<version>.tar.gz` into `dist/` |
 | `build-modules.sh` | Builds the installable zip of every module into `dist/` |
