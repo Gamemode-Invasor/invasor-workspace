@@ -1,0 +1,175 @@
+{
+  "schema": 1,
+  "generated": "2026-10-10T17:18:35Z",
+  "modules": [
+    {
+      "repo": "invasor-artwork",
+      "stable": {
+        "id": "artwork",
+        "version": "0.2.1",
+        "tag": "v0.2.1",
+        "name": "Artwork",
+        "description": "Find community artwork for your games and shortcuts (images from steamgriddb.com).",
+        "author": "FranjeGueje",
+        "min_core": "0.1.3"
+      },
+      "beta": {
+        "id": "artwork",
+        "version": "0.2.1",
+        "tag": "v0.2.1",
+        "name": "Artwork",
+        "description": "Find community artwork for your games and shortcuts (images from steamgriddb.com).",
+        "author": "FranjeGueje",
+        "min_core": "0.1.3"
+      }
+    },
+    {
+      "repo": "invasor-deckico",
+      "stable": {
+        "id": "deckico",
+        "version": "0.2.0",
+        "tag": "v0.2.0",
+        "name": "Deckico",
+        "description": "Puts each game's icon on its compatdata and shadercache folders, every time Steam starts.",
+        "author": "FranjeGueje",
+        "min_core": null
+      },
+      "beta": {
+        "id": "deckico",
+        "version": "0.2.0",
+        "tag": "v0.2.0",
+        "name": "Deckico",
+        "description": "Puts each game's icon on its compatdata and shadercache folders, every time Steam starts.",
+        "author": "FranjeGueje",
+        "min_core": null
+      }
+    },
+    {
+      "repo": "invasor-patito",
+      "stable": {
+        "id": "patito",
+        "version": "0.2.1",
+        "tag": "v0.2.1",
+        "name": "Patito",
+        "description": "Frame generation profiles for lsfg-vk: edit them and choose one per game.",
+        "author": "FranjeGueje",
+        "min_core": "0.1.3"
+      },
+      "beta": {
+        "id": "patito",
+        "version": "0.2.1",
+        "tag": "v0.2.1",
+        "name": "Patito",
+        "description": "Frame generation profiles for lsfg-vk: edit them and choose one per game.",
+        "author": "FranjeGueje",
+        "min_core": "0.1.3"
+      }
+    },
+    {
+      "repo": "invasor-pescao",
+      "stable": {
+        "id": "pescao",
+        "version": "0.2.1",
+        "tag": "v0.2.1",
+        "name": "Pescao",
+        "description": "Frame generation and scaling profiles for MAKO Renderer: edit them and choose one per game.",
+        "author": "FranjeGueje",
+        "min_core": "0.1.3"
+      },
+      "beta": {
+        "id": "pescao",
+        "version": "0.2.1",
+        "tag": "v0.2.1",
+        "name": "Pescao",
+        "description": "Frame generation and scaling profiles for MAKO Renderer: edit them and choose one per game.",
+        "author": "FranjeGueje",
+        "min_core": "0.1.3"
+      }
+    },
+    {
+      "repo": "invasor-ge-rr",
+      "stable": {
+        "id": "ge-rr",
+        "version": "0.2.0",
+        "tag": "v0.2.0",
+        "name": "GE-Proton Rolling Release",
+        "description": "Keeps the latest GE-Proton installed as a single \"GE-Proton\" compatibility tool, checked every time Steam starts.",
+        "author": "FranjeGueje",
+        "min_core": null
+      },
+      "beta": {
+        "id": "ge-rr",
+        "version": "0.2.0",
+        "tag": "v0.2.0",
+        "name": "GE-Proton Rolling Release",
+        "description": "Keeps the latest GE-Proton installed as a single \"GE-Proton\" compatibility tool, checked every time Steam starts.",
+        "author": "FranjeGueje",
+        "min_core": null
+      }
+    },
+    {
+      "repo": "invasor-noty",
+      "stable": {
+        "id": "noty",
+        "version": "0.2.0",
+        "tag": "v0.2.0",
+        "name": "Noty",
+        "description": "Show Steam notifications from your own scripts and from programs like Comet: POST JSON to a local web service.",
+        "author": "FranjeGueje",
+        "min_core": null
+      },
+      "beta": {
+        "id": "noty",
+        "version": "0.2.0",
+        "tag": "v0.2.0",
+        "name": "Noty",
+        "description": "Show Steam notifications from your own scripts and from programs like Comet: POST JSON to a local web service.",
+        "author": "FranjeGueje",
+        "min_core": null
+      }
+    },
+    {
+      "repo": "invasor-companion",
+      "stable": {
+        "id": "companion",
+        "version": "0.1.0",
+        "tag": "v0.1.0",
+        "name": "Companion",
+        "description": "Builds a game's Steam launch options and copies them, adds files to Steam as non-Steam games and shows everything Steam knows about the current game.",
+        "author": "FranjeGueje",
+        "min_core": null
+      },
+      "beta": {
+        "id": "companion",
+        "version": "0.1.0",
+        "tag": "v0.1.0",
+        "name": "Companion",
+        "description": "Builds a game's Steam launch options and copies them, adds files to Steam as non-Steam games and shows everything Steam knows about the current game.",
+        "author": "FranjeGueje",
+        "min_core": null
+      }
+    },
+    {
+      "repo": "invasor-rakun",
+      "stable": {
+        "id": "rakun",
+        "version": "0.1.0",
+        "tag": "v0.1.0",
+        "name": "Rakun",
+        "description": "Download your games from third-party stores via the Rakun engine.",
+        "author": "FranjeGueje",
+        "min_core": "0.1.3"
+      },
+      "beta": {
+        "id": "rakun",
+        "version": "0.1.0",
+        "tag": "v0.1.0",
+        "name": "Rakun",
+        "description": "Download your games from third-party stores via the Rakun engine.",
+        "author": "FranjeGueje",
+        "min_core": "0.1.3"
+      }
+    }
+  ],
+  "skipped": []
+}
