@@ -24,7 +24,7 @@ git clone git@github.com:Gamemode-Invasor/invasor-workspace.git proyecto-invasor
 
 ## Adding a module repository
 Create it next to the others and add its folder name to `repos.conf`. Once it has a release (a zip and its `.sha256`, see
-`invasor/docs/MODULES.md`) it shows up in the Invasor market within about an hour.
+`invasor/docs/MODULES.md`) it shows up in the Invasor market within about twelve hours.
 
 ## License
 [GNU General Public License v3.0 or later](LICENSE) (GPL-3.0-or-later).
